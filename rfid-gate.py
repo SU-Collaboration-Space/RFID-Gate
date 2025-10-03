@@ -38,7 +38,7 @@ def capture_rtsp_snapshot():
     Captures a single frame from an RTSP stream using ffmpeg.
     """
     command = [
-        'ffmpeg', '-y', '-i', 'rtsp://admin:Onur18--@10.82.3.2:554/Streaming/Channels/101',
+        'ffmpeg', '-y', '-i', 'rtsp://user:pass@ip.add.re.ss:554/Streaming/Channels/101',
         '-vframes', '1', '-strftime', '1', '/var/www/html/capture/%Y-%m-%d_%H-%M-%S.jpg'
     ]
     print("Leave denied. Taking picture...")
